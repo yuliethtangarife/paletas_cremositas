@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="stylesheet" href="css/stylesPedido.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="Cremositos/imagen/iconos/favicon.png" type="image/x-icon">
+    <script src="js/botones.js"></script>
+
+</head>
+<body class="fondo">
+    <div id="header"></div>
+    <main>
+        <table id="tablaCarrito" border="1">
+            <thead>
+                <tr>
+                    <th>Nombre del Producto</th>
+                    <th>Cantidad</th>
+                    <th>Valor Total</th>
+                </tr>
+            </thead>
+            <tbody id="carritoBody">
+                <!-- Las filas de productos se agregarán aquí -->
+            </tbody>
+            <tfoot>
+                <tr class="footer-row">
+                    <td colspan="2">Total de la compra:</td>
+                    <td id="costoTotal">$0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="botones">
+            <div class="contBoton">
+                <button onclick="irCatalogo()">Ir a catalogo</button>                               
+                <button onclick="Comprar()">Comprar</button>
+            </div>
+        </div>
+    </main>
+    <div id="footer"></div>
+    <script src="header_footer/conn.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="css/stylesCatalogo.css"> 
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="imagen/iconos/favicon.png" type="image/x-icon">
+    <script src="../Cremositos/js/botones.js"></script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="fondo"></div>
+        <hr>
+        <h3>Catálogo de Productos</h3>
+        <div class="catalogo">
+            <!-- Producto 1 -->
+            <div class="producto">
+                <img src="imagen/imagenes_paletas/mango biche.jpg" alt="Producto 1">
+                <h3>Mango Biche</h3>
+                <hr>
+                <span>$2,000</span>
+                <br><br>
+                <input type="number" id="cantidadMangoBiche" value="0" min="1" >
+                <button onclick="incrementarCantidad('Mango Biche', 'cantidadMangoBiche', 2000)">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="producto">
+                <img src="imagen/imagenes_paletas/maracumango.jpg" alt="Producto 2">
+                <h3>Maracu-Mango</h3>
+                <hr>
+                <span>$2,000</span>
+                <br><br>
+                <input type="number" id="cantidadMaracuMango" value="0" min="1" >
+                <button onclick="incrementarCantidad('Maracu-Mango', 'cantidadMaracuMango', 2000)">Añadir al carrito</button>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="producto">
+                <img src="imagen/imagenes_paletas/oreo.jpg" alt="Producto 3">
+                <h3>Oreo</h3>
+                <hr>
+                <span>$2,000</span>
+                <br><br>
+                <input type="number" id="cantidadOreo" value="0" min="1">
+                <button onclick="incrementarCantidad('Oreo', 'cantidadOreo', 2000)">Añadir al carrito</button>
+            </div>
+            <!-- Producto 4 -->
+            <div class="producto">
+                <img src="imagen/imagenes_paletas/arequipe.jpg" alt="Producto 4">
+                <h3>Arequipe</h3>
+                <hr>
+                <span>$2,000</span>
+                <br><br>
+                <input type="number" id="cantidadArequipe" value="0" min="1" >
+                <button onclick="incrementarCantidad('Arequipe', 'cantidadArequipe', 2000)">Añadir al carrito</button>
+            </div>
+            <!-- Producto 5 -->
+            <div class="producto">
+                <img src="imagen/imagenes_paletas/browni.jpg" alt="Producto 5">
+                <h3>Browni</h3>
+                <hr>
+                <span>$2,000</span>
+                <br><br>
+                <input type="number" id="cantidadBrowni" value="0" min="1" >
+                <button onclick="incrementarCantidad('Browni', 'cantidadBrowni', 2000)">Añadir al carrito</button>
+            </div>
+            <!-- Producto 6 -->
+            <div class="producto">
+                <img src="imagen/imagenes_paletas/coco.jpg" alt="Producto 6">
+                <h3>Coco</h3>
+                <hr>
+                <span>$2,000</span>
+                <br><br>
+                <input type="number" id="cantidadCoco" value="0" min="1" >
+                <button onclick="incrementarCantidad('Coco', 'cantidadCoco', 2000)">Añadir al carrito</button>
+            </div>
+            <!-- Producto 7 -->
+            <div class="producto">
+                <img src="imagen/imagenes_paletas/milo.jpg" alt="Producto 7">
+                <h3>Milo</h3>
+                <hr>
+                <span>$2,000</span>
+                <br><br>
+                <input type="number" id="cantidadMilo" value="0" min="1" >
+                <button onclick="incrementarCantidad('Milo', 'cantidadMilo', 2000)">Añadir al carrito</button>
+            </div>
+            <!-- Producto 8 -->
+            <div class="producto">
+                <img src="imagen/imagenes_paletas/festival de limon.jpg" alt="Producto 8">
+                <h3>Festival Limon</h3>
+                <hr>
+                <span>$2,000</span>
+                <br><br>
+                <input type="number" id="cantidadFestivalLimon" value="0" min="1" >
+                <button onclick="incrementarCantidad('Festival Limon', 'cantidadFestivalLimon', 2000)">Añadir al carrito</button>
+            </div>
+            <!-- Producto 9 -->
+            <div class="producto">
+                <img src="imagen/imagenes_paletas/fresa.jpg" alt="Producto 9">
+                <h3>Fresa</h3>
+                <hr>
+                <span>$2,000</span>
+                <br><br>
+                <input type="number" id="cantidadFresa" value="0" min="1" >
+                <button onclick="incrementarCantidad('Fresa', 'cantidadFresa', 2000)">Añadir al carrito</button>
+            </div>
+            <!-- Producto 10 -->
+            <div class="producto">
+                <img src="imagen/imagenes_paletas/mani.jpg" alt="Producto 10">
+                <h3>Mani</h3>
+                <hr>
+                <span>$2,000</span>
+                <br><br>
+                <input type="number" id="cantidadMani" value="0" min="1" >
+                <button onclick="incrementarCantidad('Mani', 'cantidadMani', 2000)">Añadir al carrito</button>
+            </div>
+            
+            <!-- Producto 11 -->
+            <div class="producto">
+                <img src="imagen/imagenes_paletas/mora.jpg" alt="Producto 11">
+                <h3>Mora</h3>
+                <hr>
+                <span>$2,000</span>
+                <br><br>
+                <input type="number" id="cantidadMora" value="0" min="1">
+                <button onclick="incrementarCantidad('Mora', 'cantidadMora', 2000)">Añadir al carrito</button>
+            </div>
+            <!-- Producto 12 -->
+            <div class="producto">
+                <img src="imagen/imagenes_paletas/chocolate.jpg" alt="Producto 12">
+                <h3>Chocolate</h3>
+                <hr>
+                <span>$2,000</span>
+                <br><br>
+                <input type="number" id="cantidadChocolate" value="0" min="1">
+                <button onclick="incrementarCantidad('Chocolate', 'cantidadChocolate', 2000)">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="contBoton">
+            <button onclick="siguiente()">Siguiente</button>
+        </div>
+
+    </main>
+    <div id="footer"></div>
+    <script src="header_footer/conn.js"></script>
+</body>
+
+</html>

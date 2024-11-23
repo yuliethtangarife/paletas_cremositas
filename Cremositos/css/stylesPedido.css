@@ -1,0 +1,96 @@
+
+.logo img {  
+    height: 50px;
+    box-shadow: 0 0 100px 90px rgba(0, 255, 0, 0.9); 
+    background-color: hsl(120, 94%, 45%);
+}
+
+main {
+    min-height: 70vh;
+    padding: 50px;
+    width: 100%;
+}
+
+#tablaCarrito {
+    width: 60%; /* Ancho de la tabla ajustado */
+    margin: 30px auto; /* Centrado automático */
+    border-collapse: collapse;
+    box-shadow: 10px 10px 10px rgba(2, 82, 2, 0.65);
+    background-color: white;
+}
+
+#tablaCarrito, th, td {
+    border: 1px solid #ddd;
+}
+
+#tablaCarrito th, #tablaCarrito td {
+    padding: 12px;
+    text-align: center;
+    font-size: 1em;
+}
+
+#tablaCarrito th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+#tablaCarrito tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#tablaCarrito tbody tr:hover {
+    background-color: #0ece3e;
+}
+
+/* Estilo para el input de cantidad */
+.cantidadInput {
+    width: 60px;
+    text-align: center;
+    border: none;
+    font-size: 16px;
+    color: #000000;
+}
+
+.cantidadInput:focus {
+    outline: none;
+    border-bottom: 2px solid #1cb822;
+}
+
+/* Estilo para la celda de valor total */
+.precioTotal {
+    font-weight: bold;
+    color: #4CAF50;
+    transition: color 0.3s ease;
+}
+
+.precioTotal:hover {
+    color: #000000;
+    cursor: pointer;
+}
+
+/* Estilo para el footer de la tabla */
+.footer-row {
+    font-weight: bold;
+    background-color: #e8e8e8;
+}
+
+.footer-row td {
+    padding: 15px;
+    font-size: 18px;
+}
+
+#costoTotal {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.contBoton {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 2%;
+}
+
+
+

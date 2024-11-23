@@ -1,0 +1,151 @@
+@font-face {
+    font-family: font1;
+    src: url(font/Fashion\ Fetish\ Outline.ttf); 
+}
+
+.logo img {  
+    display: flex; 
+    height: 50px;
+    box-shadow: 0 0 100px 90px rgba(0, 255, 0, 0.897); 
+    background-color: hsl(120, 94%, 45%); 
+    align-items: center;
+}
+
+main {
+    padding: 50px;
+    overflow-y: auto; /* Habilita el desplazamiento solo para el catálogo */
+    max-height: 100vh; /* Ajusta la altura para que ocupe la pantalla */
+}
+
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;  /* Centrado horizontal */
+}
+
+.catalogo button{
+    box-shadow: 0 0 20px 15px rgba(50, 205, 50, 0.8);
+}
+
+.producto {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    text-align: center;
+    background-color: rgba(200, 255, 0, 0.452);
+}
+
+.producto input[type="number"] {
+    width: 50px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.producto img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.producto h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.producto p {
+    font-size: 14px;
+    color: #555;
+}
+
+.producto span {
+    font-weight: bold;
+    color: #333;
+}
+
+.producto button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: #218838;
+}
+
+.contBoton {
+    display: flex;
+    justify-content: center; /* Centrado del contenedor */
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: rgb(84, 240, 12);
+    color: black;
+}
+
+/* Medias queries para hacerlo responsive */
+@media screen and (max-width: 1200px) {
+    .catalogo {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
+    }
+
+    .producto {
+        width: 220px; /* Reducir el tamaño de los productos */
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .catalogo {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas en pantallas pequeñas */
+    }
+
+    .producto {
+        width: 200px; /* Reducir aún más el tamaño de los productos */
+    }
+
+    main {
+        padding: 20px; /* Reducir el padding en pantallas pequeñas */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .catalogo {
+        grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+        width: 100%; /* Asegura que ocupe todo el espacio disponible */
+    }
+
+    .producto {
+        width: 100%; /* Los productos ocupan todo el ancho de la pantalla */
+    }
+
+    .logo img {
+        height: 40px; /* Ajustar el tamaño del logo */
+    }
+
+    main {
+        padding: 10px; /* Reducir el padding aún más */
+    }
+
+    .producto h3 {
+        font-size: 16px; /* Reducir el tamaño de la fuente */
+    }
+
+    .producto p {
+        font-size: 12px; /* Reducir el tamaño de la fuente */
+    }
+
+    .producto span {
+        font-size: 14px; /* Reducir el tamaño de la fuente */
+    }
+}

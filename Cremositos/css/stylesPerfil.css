@@ -1,0 +1,188 @@
+
+main {
+    padding: 50px;
+    overflow-y: auto; /* Habilita el desplazamiento solo para el catálogo */
+    max-height: 100vh; /* Ajusta la altura para que ocupe la pantalla */
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(30, 90, 2);
+    color: white;
+}
+
+.navbar h1 {
+    font-size: 24px;
+}
+
+.navbar button {
+    background-color: #ff4b5c;
+    border: none;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-color: #ff1f3b;
+}
+
+/* Contenido del perfil */
+.perfil-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.informacion-usuario, .ventas-guardadas {
+    width: 80%;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.informacion-usuario h2, .ventas-guardadas h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.informacion-usuario p, .ventas-guardadas p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+.venta-seccion {
+
+    justify-content: center;  /* Centra el botón horizontalmente */
+    align-items: center;      /* Centra el botón verticalmente */
+    margin-bottom: 10px;      /* Para agregar un pequeño espacio debajo */
+}
+.botonDespble {
+    background-color: #0f9b0f;
+    color: white;
+    padding: 10px 20px;       /* Espaciado adecuado para el botón */
+    border: none;             /* Opcional: quitar bordes */
+    border-radius: 5px;       /* Opcional: redondear los bordes */
+    cursor: pointer;         /* Cambia el cursor al pasar por encima */
+}
+.verCompra {    
+    display: none;
+}
+section{
+    padding: 10px;
+    border: 2px solid rgb(3, 107, 12) ;
+}
+/* Estilos para la tabla de ventas guardadas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #0f9b0f;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+}
+
+td {
+    font-size: 14px;
+    color: #333;
+}
+
+/* Ajuste de la tabla cuando no hay ventas guardadas */
+#ventasGuardadas p {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 900px) {
+    .boton1 {
+        text-align: center;
+        font-size: 10px;
+        padding: 0 2px;
+        height: 35px;
+        width: 90px;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar h1 {
+        font-size: 20px;
+    }
+
+    .navbar button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .perfil-contenido {
+        padding: 15px;
+    }
+
+    .informacion-usuario, .ventas-guardadas {
+        width: 90%;
+    }
+
+    table th, table td {
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+/* Media Queries para dispositivos muy pequeños (móviles) */
+@media (max-width: 480px) {
+    .navbar h1 {
+        font-size: 18px;
+    }
+
+    .informacion-usuario, .ventas-guardadas {
+        width: 95%;
+    }
+
+    table th, table td {
+        font-size: 10px;
+        padding: 6px;
+    }
+
+    #ventasGuardadas p {
+        font-size: 14px;
+    }
+}
+
+
+
+
+.content {
+    margin-bottom: 20px;
+}

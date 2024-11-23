@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de usuario</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styleFormulario.css">
+    <link rel="shortcut icon" href="Cremositos/imagen/iconos/favicon.png" type="image/x-icon">
+    <script src="js/botones.js"></script>
+</head>
+<body class="fondo">
+        <div id="header"></div>
+    <main>
+        <section class="info">
+            <aside class="left">               
+            <p>Delicias Caseras, Sabores <br> Incomparables.</p>             
+            </aside>
+            <aside class="right">
+                <form onsubmit="return validarFormulario()">
+                    <label fo   bre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Brando Perez">
+                    
+                    <label for="celular" >Celular</label>
+                    <input type="text" id="celular" name="celular" placeholder="3024180613" maxlength="10">
+                    
+                    <label for="direccion">Dirección</label>
+                    <input type="text" id="direccion" name="direccion" placeholder="CL 56 CR 18">
+                    
+                    <label for="ubicacion">Descripción de ubicación</label>
+                    <textarea id="ubicacion" name="ubicacion" placeholder="casa blanca al lado de la tienda de don pacho"></textarea>               
+                    
+                    <div class="sig">
+                        <button type="submit">Siguiente</button>
+                    </div>
+                </form>
+            </aside>
+        </section>
+    </main>
+    <div id="footer"></div>
+    <script src="header_footer/conn.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="../Cremositos/css/stylesPerfil.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="Cremositos/imagen/iconos/favicon.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <script src="js/PerfilUs.js"></script>
+    <script src="js/botones.js"></script>
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="fondo"></div>
+        <hr>
+        <h3>Perfil de Usuario</h3>
+        <div class="perfil-contenido">
+            <!-- Sección de información personal -->
+            <section class="informacion-usuario">
+                <h2>Información Personal</h2>
+                <p><strong>Nombre:</strong> Jenny Pérez</p>
+                <p><strong>Email:</strong> jenny.perez@gmail.com</p>
+                <p><strong>Teléfono:</strong> +57 300 123 4567</p>
+            </section>
+
+            <!-- Sección de ventas guardadas -->
+            <section class="ventas-guardadas" id="ventasGuardadas">
+                <h2>Ventas Guardadas</h2>
+                <div id="ventasGuardadas">   
+                    <p>No hay ventas guardadas.</p>
+                </div>
+            </section>
+
+            <!-- Botón para generar el PDF -->
+            <div class="pdf-section">
+                <button class="boton1" onclick="irCatalogo()">Ir a catalogo</button>
+                <button class="boton1" onclick="generarPDF()">Generar PDF</button>             
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+    <script src="header_footer/conn.js"></script>
+</body>
+</html>

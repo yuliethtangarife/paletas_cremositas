@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 20px;
+    font-family: 'font1';
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    min-height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 0 10% ;
+    display: flex;
+    gap: 1%;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+main .contenedor1 img {
+    width: 30%;
+    flex-shrink: 0;
+    display: flex;
+    animation: deslizar 10s linear infinite;
+}
+
+
+.contenedor1 {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 7%;
+    padding: 0 0px;
+    flex-wrap: nowrap;
+}
+.contenedor1 img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+}
+@keyframes deslizar {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+.slider {
+    display: flex;
+    gap: 20px;
+    animation: deslizar 15s linear infinite;
+}
+.contenedor2 {
+    min-height: 4vh;
+    display: flex;
+    padding: 0 10%;
+    background-color: #06e906ab;
+    box-shadow: 0px 0px 20px 13px #06e906bb;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contenedor2 h2, p {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.left{
+    width: auto;
+    height: auto;
+}
+aside.right {
+
+    padding: 15px;
+    background-color: #ccf5c771;
+    color: black;
+    min-height: 20vh;
+    width: 70%;
+}
+.boton1 {
+    cursor: pointer;
+    padding: 9px;
+    width: 50%;
+    border: none;
+    text-align: center;
+    font-size: 15px;
+    outline: none;
+    transition: background-color 0.2s;
+    border-radius: 15px;
+}
+.btn2{
+    width: 51%;
+}
+
+
+.panel {
+    padding: 0 15px;
+    display: none;
+    background-color: rgba(5, 1, 26, 0.158);
+    overflow: hidden;
+}
+
+
+/* Ajustes para pantallas pequeñas (móviles) */
+@media (max-width: 900px) {
+    .boton1 {
+        text-align: center;
+        font-size: 10px;
+        padding: 0 2px;
+        height: 35px;
+        width: 90px;
+    }
+
+    aside.right {
+        width: 90%;
+        min-height: auto;
+    }
+    
+    .contenedor2 {
+        flex-direction: column-reverse;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .left{
+        text-align: center;
+        display: flex;
+        gap: 1%;
+        width: 90%;
+        min-height: 10vh;
+        justify-content: center;
+    }
+}
+ .Boton {
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .contenedor1 {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 0 10px;
+    }
+
+    main .contenedor1 img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 16px;
+    }
+
+    .contenedor1 {
+        gap: 10px;
+    }
+
+    .slider {
+        gap: 10px;
+    }
+
+    main .contenedor1 img {
+        width: 100%;
+    }
+
+}
+

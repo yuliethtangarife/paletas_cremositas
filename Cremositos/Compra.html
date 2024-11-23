@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra y pago de productos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylesCompra.css">
+    <script src="js/botones.js"></script>
+    <script src="js/actualizarCosto.js" defer></script>
+</head>
+<body>
+    <div id="header"></div>
+    
+    <main>
+        <div class="fondo"></div>
+        <hr>
+        <div class="compra">
+            <h3>Total de la compra:</h3>
+            <h3 id="costoTotal" class="total-compra">$0.00</h3>
+        </div>
+        <!-- Formulario para subir y guardar comprobante -->
+        <form class="formComprobante">
+            <img src="imagen/QR-Pago.jpeg" alt="QR para pago">
+            
+            <label for="comprobante" class="comprobante">Subir comprobante de pago:</label>           
+            <input type="file" id="comprobante" accept=".jpg,.jpeg,.png,.pdf" required>
+            <div class="botones">
+                <button onclick="irCatalogo()">Ir a catalogo</button>    
+                <button onclick="GuardarCompra()">Guardar Compra</button>
+            </div>
+            
+        </form>
+    </main>
+    <div id="footer"></div>
+    <script src="header_footer/conn.js"></script>   
+</body>
+
+</html>
